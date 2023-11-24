@@ -1,0 +1,14 @@
+<svg id="icon_school" width="21" height="16" viewBox="0 0 21 16" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1066_5459)">
+<path d="M19.6 15.11V6.04999H14.94V0.859985H5.16V6.04999H0.5V15.11" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="Group">
+<path d="M10.05 7.66001C10.9723 7.66001 11.72 6.91232 11.72 5.99001C11.72 5.06769 10.9723 4.32001 10.05 4.32001C9.12769 4.32001 8.38 5.06769 8.38 5.99001C8.38 6.91232 9.12769 7.66001 10.05 7.66001Z" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.51 15.11V11.72C12.51 10.36 11.41 9.26001 10.05 9.26001C8.68997 9.26001 7.58997 10.36 7.58997 11.72V15.11" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+<defs>
+<clipPath>
+<rect width="20.1" height="15.25" fill="white" transform="translate(0 0.359985)"/>
+</clipPath>
+</defs>
+</svg>

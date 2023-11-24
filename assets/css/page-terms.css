@@ -1,0 +1,439 @@
+@charset "UTF-8";
+
+.content {
+	color: #3B4043;
+	font-family: dnp-shuei-mgothic-std, sans-serif;
+	font-size: 0.9375rem;
+	font-weight: 400;
+	font-style: normal;
+  font-feature-settings: "pkna"1;
+	overflow: auto;
+}
+
+.content a {
+	text-decoration: none;
+	color: #3B4043;
+}
+
+.content a:link,
+.content a:active,
+.content a:visited {
+  text-decoration: none;
+  color: #3B4043;
+}
+
+.content ul,
+.content ol {
+	padding: 0 0 0 20px;
+}
+
+.content ul {
+	list-style: disc;
+}
+
+.content table tr {
+	padding: 0;
+	background: none;
+}
+
+.content table th,
+.content table td {
+	padding: 0;
+	border: none;
+}
+
+@media screen and (max-width: 834px) {
+	.content table th,
+	.content table td {
+		padding: 0;
+		font-size: inherit;
+	}
+}
+
+.content-in.wrap {
+	max-width: 100%;
+	width: 1000px;
+	margin: 0 auto;
+	line-break:strict;
+	word-break:break-word;
+  overflow-wrap:break-word;
+  word-wrap:break-word;
+}
+
+ul.nav_menu {
+	list-style: none;
+	margin: 30px 0;
+	padding: 0;
+	text-align: center;
+	font-weight: 600;
+	color: #3B4043;
+}
+
+ul.nav_menu li {
+	display: inline-block;
+}
+
+ul.nav_menu li + li {
+	margin-left: 2rem;
+}
+
+section h2 {
+	border-bottom: dashed 1px #FF69B4;
+	text-align: left;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 1;
+	padding: 0 0 15px 0;
+	margin: 0 auto 35px;
+}
+
+section h2 > img {
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+section h3 {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+section h4,
+#privacy h3 {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+.is-pink {
+	color: #ea4086;
+	font-weight: 600;
+}
+
+.honmon p {
+	margin: 0 auto 35px auto;
+}
+
+@media screen and ( max-width: 999px ) {
+	.brpc, .pc_wrap {
+    display: none;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+	.honmon {
+    padding: 0 29px;
+    text-align: left;
+	}
+}
+
+#about {
+	padding-bottom: 41%;
+	background: url('../img/terms/bg_about.png') no-repeat;
+	background-position: top center;
+	text-align: center;
+}
+
+@media screen and ( max-width: 999px ) {
+	#about {
+		background-size: 300% auto;
+	}
+
+	#about h1 {
+		min-width: 60%;
+		padding: 9% 0 3%;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+	#about {
+		max-width: 90%;
+		width: 888px;
+		margin: 0 auto;
+		padding: 54px 0;
+		background-size: cover;
+		box-shadow: 2px 2px 5px rgba(153, 153, 153, 0.4);
+	}
+}
+
+#message {
+	position: relative;
+	margin-top: -23%;
+}
+
+#message h3 {
+	padding-top: 0.5em;
+	line-height: 1.8;
+}
+
+#message h3 .bb {
+	border-bottom: solid 2px #FF69B4;
+	padding: 0 0 5px 0;
+}
+
+#message .img1 {
+	position: absolute;
+	top: -2.5%;
+	left: 2%;
+}
+
+#message .img2 {
+	box-shadow: 4px 4px 10px rgba(153, 153, 153, 0.4);
+}
+
+#message .img3 {
+	position: absolute;
+	top: -1.5%;
+	right: 7%;
+}
+
+#message .img4 {
+	position: absolute;
+	top: 13%;
+	left: 2%;
+}
+
+#message .con {
+	padding: 5%;
+}
+
+#message .con p {
+	margin: 25px auto;
+	font-size: 14px;
+}
+
+@media screen and ( max-width: 999px ) {
+	#message h3 {
+		text-align: center;
+	}
+
+	#message .img1 {
+		width: 58%;
+	}
+
+	#message .img2 {
+		display: block;
+		width: 60%;
+		margin: 0 auto;
+	}
+	
+	#message .img3 {
+		width: 18%;
+	}
+	
+	#message .img4 {
+		width: 18%;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+	#message {
+		width: 849px;
+    margin: 0 auto;
+		padding-top: 120px;
+	}
+	
+	#message::before {
+		content: "";
+    position: absolute;
+    top: -40px;
+    left: -75px;
+    display: block;
+    width: 1000px;
+    height: 100%;
+		padding-bottom: 150px;
+    background: url('../img/terms/bg_message.png') center bottom no-repeat;
+		background-size: cover;
+    z-index: -1;
+	}
+	
+	#message .img1 {
+		top: 50px;
+		left: 0;
+	}
+	
+	#message .img2 {
+		position: absolute;
+		top: -20px;
+    right: 0;
+    width: 327px;
+	}
+
+	#message .img3 {
+    top: -100px;
+    right: 30px;
+	}
+
+	#message .img4 {
+		top: 477px;
+    right: 200px;
+		left: unset;
+	}
+
+	#message .img5 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+	}
+
+	#message .con {
+		background: #fff;
+    width: 540px;
+    max-width: 100%;
+    padding: 40px;
+	}
+}
+
+#company {
+	max-width: 90%;
+	margin: 5% auto 10% auto;
+}
+
+#company .con {
+	box-shadow: 0 0 0 1px #FF69B4, 0 0 0 4px #FFF, 0 0 0 5px #FF69B4;
+	padding: 26px;
+	background: #fff;
+}
+
+#company h3 {
+	text-align: left;
+	font-size: 23px;
+	font-weight: 400;
+}
+
+#company h3 .bb {
+	border-bottom: solid 2px #FF69B4;
+	padding: 0 0 5px 0;
+}
+
+#company .maru {
+	color: #FF69B4;
+	font-weight: 600;
+}
+
+#company .con .inner {
+	margin: 35px auto 0 auto;
+}
+
+#company .con .inner .inner_l {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+}
+
+@media screen and ( min-width: 1000px ) {
+	#company {
+		position: relative;
+		width: 840px;
+		margin: 3.75rem auto 4.5rem;
+	}
+
+	#company .con .inner {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		text-align: left;
+	}
+
+	#company .con .inner .inner_l table {
+		width: 70%;
+		margin: 0 0 40px 0;
+	}
+
+	#company .con .inner .inner_r {
+		-ms-flex-preferred-size: 50%;
+		flex-basis: 50%;
+		border-left: solid 1px #FF69B4;
+		padding: 0 0 0 20px;
+	}
+}
+
+#cancel, #service, #commercial, #privacy {
+	padding: 5%;
+}
+
+#cancel .honmon ul, #service .honmon ul, #service .honmon ol, #privacy .honmon ul, #privacy .honmon ol {
+	margin: 0 auto 35px auto;
+}
+
+#cancel, #commercial {
+	background: #ffecf4;
+}
+
+#commercial .honmon table {
+	margin: 0 auto 38px auto;
+	width: 100%;
+}
+
+#commercial .honmon table .td1,
+#commercial .honmon table .td2 {
+	width: 100%;
+	padding: 0;
+	border: none;
+}
+
+#commercial .honmon table .td1 {
+	font-weight: 600;
+}
+
+#commercial .browser {
+	font-size: 0.875rem;
+}
+
+#commercial .browser p {
+	margin: 0;
+}
+
+#commercial .has-background.gray {
+	margin: 13px auto 8px auto;
+	padding: 0 0 0 10px;
+	background: gray;
+	color: #fff;
+}
+
+@media screen and ( max-width: 999px ) {
+	#commercial .honmon td {
+		display: block;
+	}
+	
+}
+
+@media screen and ( min-width: 1000px ) {
+	#cancel, #service, #commercial, #privacy {
+		padding: 40px;
+	}
+
+	#commercial .browser {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.kiyaku,
+	#privacy .honmon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+		column-gap: 2.5rem;
+	}
+
+	.kiyaku_l,
+	.kiyaku_r,
+	#privacy .honmon_l,
+	#privacy .honmon_r {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+	}
+
+	#commercial .honmon table .td1 {
+    width: 9em;
+    vertical-align: top;
+	}
+
+	#commercial .honmon table .td2 {
+    width: calc(100% - 9em);
+    border-left: 1px solid #ea4086;
+    padding: 0 0 0 18px;
+	}
+}

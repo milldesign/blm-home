@@ -1,0 +1,14 @@
+<svg id="icon_present" width="17" height="20" viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1066_5435)">
+<path d="M16.36 6.75H0.5V19.14H16.36V6.75Z" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M0.599976 12.95H16.26" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.43005 6.75V19.15" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.48996 1.76999C7.39996 2.67999 8.22996 6.79999 8.22996 6.79999C8.22996 6.79999 4.10996 5.96999 3.19996 5.05999C2.28996 4.14999 2.28996 2.67999 3.19996 1.76999C4.10996 0.859994 5.57996 0.859994 6.48996 1.76999Z" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.26 1.76999C9.35002 2.67999 8.52002 6.79999 8.52002 6.79999C8.52002 6.79999 12.64 5.96999 13.55 5.05999C14.46 4.14999 14.46 2.67999 13.55 1.76999C12.64 0.859994 11.17 0.859994 10.26 1.76999Z" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath>
+<rect width="16.86" height="19.06" fill="white" transform="translate(0 0.589996)"/>
+</clipPath>
+</defs>
+</svg>

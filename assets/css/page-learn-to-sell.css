@@ -1,0 +1,837 @@
+@charset "UTF-8";
+
+:root {
+	--main-color: #34D2DC;
+}
+
+a.has-arrow {
+	max-width: 100%;
+	width: 270px;
+	margin: 0 auto;
+}
+
+.section-header p.balloon {
+	top: 18px;
+	right: 0;
+	left: 42px;
+	width: 242px;
+	height: 142px;
+	padding: 34px 12px 0 0;
+	background-image: url(../img/learn-to-sell/balloon_blue.svg);
+	z-index: 30;
+}
+
+.section-header .illust-container {
+	padding-top: 18px;
+	overflow: hidden;
+}
+
+.section-header .illust-container img {
+	z-index: 40;
+}
+
+.section-header .illust-container img[data-filename="lady"] {
+	left: -96px;
+	width: 213px;
+	margin-bottom: -43px;
+}
+
+.section-header .illust-container img[data-filename="present"] {
+	position: absolute;
+	top: -11px;
+	right: calc(50% - 106px - 100px);
+	width: 106px;
+}
+
+.section-header.rounded .description {
+	padding: 2.225em 0 0.575em
+}
+
+@media screen and ( max-width: 999px ) {
+	.section-header .illust-container::before,
+	.section-header .illust-container::after {
+		position: absolute;
+		z-index: -1;
+	}
+
+	.section-header .illust-container::before {
+		content: url(../img/learn-to-sell/bubble_left.svg);
+		top: 0;
+		left: 0;
+	}
+
+	.section-header .illust-container::after {
+		content: url(../img/learn-to-sell/bubble_right.svg);
+		right: 0px;
+		bottom: 0px;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+	.section-header.rounded::before {
+		top: -25px;
+		left: -22px;
+		max-width: 31%;
+		width: 366px;
+		height: 236px;
+		background-image: url(../img/learn-to-sell/bubble_left_large.svg);
+		background-position: top right;
+	}
+	
+	.section-header.rounded::after {
+		bottom: -24px;
+		right: -32px;
+		max-width: 34%;
+		width: 406px;
+		height: 209px;
+		background-image: url(../img/learn-to-sell/bubble_right_large.svg);
+		background-position: left bottom;
+	}
+
+	.section-header .illust-container {
+		height: calc(100% + 30px);
+	}
+
+	.section-header .balloon-container {
+    position: absolute;
+    bottom: 100px;
+    right: calc(50% - 295px - 16em);
+    display: block;
+		width: 289px;
+    height: 158px;
+    transform: rotate(11.356deg);
+	}
+
+	.section-header.rounded p.balloon {
+		position: static;
+		width: 289px;
+    height: 158px;
+    margin: 0;
+    padding: 40px 0 0;
+	}
+
+	.section-header p.balloon::before {
+		content: url(../img/learn-to-sell/uni.svg);
+		position: absolute;
+		top: -36px;
+    right: 53px;
+	}
+
+	.section-header .illust-container img[data-filename="lady"] {
+		position: absolute;
+		bottom: -70px;
+		left: 0;
+		max-width: 44%;
+		width: 528px;
+	}
+
+	.section-header .illust-container img[data-filename="present"] {
+    top: -31px;
+    right: calc(50% - 242px - 230px);
+    max-width: 21%;
+    width: 242px;
+	}
+}
+
+section.about h2 + p {
+	margin: 1.6em 0;
+}
+
+div.courses {
+	width: max-content;
+}
+
+div.courses p.for-you {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	font-family: "dnp-shuei-mgothic-std", sans-serif;
+	font-size: 1.125em;
+	font-weight: 600;
+	line-height: 1.6;
+}
+
+div.courses p.for-you::after {
+	transform: scale(-1, 1);
+}
+
+div.courses div.start p.for-you::before,
+div.courses div.start p.for-you::after {
+	content: url(../img/learn-to-sell/banzai_blue.svg);
+}
+
+div.courses div.level-up p.for-you::before,
+div.courses div.level-up p.for-you::after {
+	content: url(../img/learn-to-sell/banzai_pink.svg);
+}
+
+div.courses div.card {
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+div.courses div.card > .inner {
+	padding: 1.5em;
+	background: #F6F3EE;
+}
+
+div.courses h3 {
+	padding: 30px 24px;
+	background-image: url(../img/learn-to-sell/bg_stripe.png);
+	background-size: 11px;
+	background-repeat: repeat;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1;
+}
+
+div.courses h3 > span {
+	display: block;
+	margin-top: 1rem;
+	font-size: 2em;
+}
+
+div.courses h4 {
+	font-family: "dnp-shuei-mgothic-std", sans-serif;
+}
+
+div.courses ul {
+	margin: 1em 0;
+	text-align: justify;
+	letter-spacing: -0.04em;
+}
+
+div.courses li + li {
+	margin-top: 0.6em;
+}
+
+div.courses li::before {
+	content: "";
+	display: inline-block;
+	width: 32px;
+	height: 24px;
+	margin-right: 0.5em;
+	vertical-align: -5px;
+}
+
+div.courses div.start li::before {
+	background-image: url(../img/learn-to-sell/check_blue.svg);
+}
+
+div.courses div.level-up li::before {
+	background-image: url(../img/learn-to-sell/check_pink.svg);
+}
+
+div.courses a.has-arrow {
+	padding: 1em 1.25em;
+	color: #fff;
+	font-weight: 600;
+	line-height: 1;
+}
+
+div.courses a.has-arrow::after,
+section.course a.has-arrow.instructors::after,
+#instructors li > a.has-arrow::after {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 1.25em;
+	width: 0.93em;
+	height: 0.93em;
+	margin: auto;
+	border-width: 2px;
+	vertical-align: -2px;
+}
+
+div.courses .start a.has-arrow {
+	background: #34D2DC;
+}
+
+div.courses .start a.has-arrow:hover {
+	background: #00748D;
+}
+
+div.courses .level-up a.has-arrow {
+	background: #FF9EC7;
+}
+
+div.courses .level-up a.has-arrow:hover {
+	background: #EA4086;
+}
+
+@media screen and ( max-width: 1059px ) {
+	div.courses > div + div {
+		margin-top: 2.5em;
+	}
+	
+	div.courses p.for-you {
+		max-width: 100%;
+		width: 374px;
+		margin: 2em auto 0;
+	}
+
+	div.courses .start p.for-you {
+		margin-bottom: 0.25em;
+	}
+
+	div.courses .level-up p.for-you {
+		margin-bottom: 0.8em;
+	}
+
+	div.courses li {
+		padding-left: calc( 32px + 0.5em );
+    text-indent: calc( -32px - 0.5em );
+	}
+}
+
+@media screen and ( min-width: 1060px ) {
+	section.about {
+		margin-bottom: 2em;
+	}
+
+	section.about h2 + p {
+		margin: 2.5em 0;
+	}
+
+	div.courses {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+		align-items: end;
+    grid-gap: 22px;
+		width: 1060px;
+	}
+
+	div.courses p.for-you {
+		align-items: flex-end;
+		margin: auto 0 1.2em;
+	}
+
+	div.courses p.for-you::before,
+	div.courses p.for-you::after {
+		margin-bottom: -5px;
+	}
+
+	div.courses h3 > span {
+		font-size: 3em;
+	}
+
+	div.courses div.card > .inner {
+		padding: 2em;
+	}
+
+	div.courses h4 {
+		margin: 0.66em 0;
+		font-size: 1.5em;
+		line-height: 1;
+	}
+
+	div.courses ul {
+		margin: 1.6em 0;
+	}
+
+	div.courses li {
+		line-height: 1;
+	}
+
+	div.courses li + li {
+		margin-top: 1em;
+	}
+}
+
+section.course {
+	padding: 1.25em;
+	overflow: hidden;
+}
+
+section.course + .course {
+	margin-top: 1.25em;
+}
+
+section.course .section-header {
+	padding: 4em 1.25em 1.6em;
+	background-image: linear-gradient(0deg, transparent 26px, #fff 27px), linear-gradient(90deg, transparent 26px, #fff 27px);
+	background-size: 28px 28px;
+	background-position: 26px 26px;
+	background-repeat: repeat;
+	border-radius: 50px;
+}
+
+section.course .section-header::before {
+	content: "";
+	position: absolute;
+	right: -2px;
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(18.736deg);
+}
+
+section.course h2 {
+	position: relative;
+	margin-bottom: 0.95em;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1;
+}
+
+section.course h2::before,
+section.course h2::after {
+	content: "";
+	position: absolute;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+section.course h2 > span {
+	position: relative;
+	display: block;
+	margin-top: 1rem;
+	padding-bottom: 10px;
+	font-size: 2em;
+	z-index: 30;
+}
+
+section.course h2 > span::before {
+	content: "";
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	background-image: url(../img/learn-to-sell/underline.svg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+section.course p {
+	text-align: justify;
+}
+
+section.course .balloon {
+	position: absolute;
+	display: block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	line-height: 1.5;
+}
+
+section.course p.description {
+	font-weight: 600;
+	letter-spacing: -0.03em;
+}
+
+section.course .section-header {
+	width: 1000px;
+}
+
+section.course > .inner {
+	width: 800px;
+}
+
+section.course > .inner > *:first-child {
+	margin-top: 2rem;
+}
+
+section.course ul.course-menu br {
+	display: none;
+}
+
+section.course a.has-arrow.instructors {
+	position: relative;
+	margin: 1.6em auto 3em;
+	padding: 1em 0;
+	background: #9A7A74;
+	box-shadow: inset 0 0 0 2px #9A7A74;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+}
+
+section.course a.has-arrow.instructors:hover {
+	background: #fff;
+	color: #9A7A74;
+}
+
+#start-course .section-header {
+	margin-top: 5em;
+}
+
+#start-course .section-header::before {
+	top: -2px;
+	width: 140px;
+	height: 64px;
+	background-image: url(../img/learn-to-sell/text_start.png);
+}
+
+#start-course h2::before {
+	top: 0;
+	left: -29px;
+	width: 75px;
+	height: 69px;
+	background-image: url(../img/learn-to-sell/star_left_blue.svg);
+}
+
+#start-course h2::after {
+	top: 6px;
+	right: -27px;
+	width: 59px;
+	height: 63px;
+	background-image: url(../img/learn-to-sell/star_right_blue.svg);
+}
+
+#start-course h2 > span::before {
+	width: 215px;
+	height: 19px;
+}
+
+#start-course .balloon {
+	top: -5em;
+	left: -2.5em;
+	width: 236px;
+	height: 130px;
+	padding: 38px 15px 0 0;
+	background-image: url(../img/learn-to-sell/balloon_blue.svg);
+	transform: rotate(-5deg) scale(-1, 1);
+}
+
+#start-course .balloon > span {
+	display: block;
+	transform: rotate(-5deg) scale(-1, 1);
+}
+
+#start-course h3,
+#start-course ol.flow li:not(:last-child)::after {
+	border-color: #34D2DC;
+}
+
+#start-course h3::before,
+#start-course h3::after {
+	background-image: url(../img/learn-to-sell/star_blue.svg);
+}
+
+#start-course ul.course-menu li::before {
+	color: #34D2DC;
+}
+
+#start-course ol.flow li::before {
+	background: #34D2DC;
+}
+
+#level-up-course .section-header {
+	margin-top: 5.7em;
+}
+
+#level-up-course .section-header::before {
+	top: -74px;
+	width: 127px;
+	height: 125px;
+	background-image: url(../img/learn-to-sell/text_level-up.png);
+}
+
+#level-up-course h2::before {
+	top: 0;
+	left: -42px;
+	width: 75px;
+	height: 69px;
+	background-image: url(../img/learn-to-sell/star_left_pink.svg);
+}
+
+#level-up-course h2::after {
+	top: 6px;
+	right: -44px;
+	width: 59px;
+	height: 63px;
+	background-image: url(../img/learn-to-sell/star_right_pink.svg);
+}
+
+#level-up-course h2 > span::before {
+	width: 258px;
+	height: 19px;
+}
+
+#level-up-course .balloon {
+	top: -92px;
+	left: -42px;
+	width: 262px;
+	height: 144px;
+	padding-top: 36px;
+	background-image: url(../img/learn-to-sell/balloon_pink.svg);
+}
+
+#level-up-course h3,
+#level-up-course ol.flow li:not(:last-child)::after {
+	border-color: #FF9EC7;
+}
+
+#level-up-course h3::before,
+#level-up-course h3::after {
+	background-image: url(../img/learn-to-sell/star_pink.svg);
+}
+
+#level-up-course ul.course-menu li::before {
+	color: #FF9EC7;
+}
+
+#level-up-course ol.flow li::before {
+	background: #FF9EC7;
+}
+
+@media screen and ( min-width: 1000px ) {
+	section.course {
+		background-size: 100%;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+	}
+
+	section.course > .inner {
+		padding: 0 1em;
+	}
+
+	section.course p {
+		text-align: center;
+	}
+
+	section.course .section-header {
+		padding-top: 2em;
+		border-radius: 999px;
+	}
+
+	section.course h2 {
+		margin-bottom: 1.575em;
+	}
+
+	section.course h2 > span {
+		font-size: 3em;
+	}
+
+	section.course ol.flow {
+		margin-top: 3em;
+	}
+	
+	#start-course {
+		background-image: url(../img/learn-to-sell/bg_dotted_blue.svg);
+	}
+
+	#start-course .section-header {
+		margin-top: 45px;
+	}
+
+	#start-course .section-header::before {
+		top: -30px;
+		right: -6px;
+		width: 249px;
+    height: 113px;
+	}
+
+	#start-course h2::before {
+		top: 32px;
+		left: 47px;
+		width: 123px;
+		height: 129px;
+		background-image: url(../img/learn-to-sell/star_left_blue_large.svg);
+	}
+
+	#start-course h2::after {
+		top: unset;
+		right: 50px;
+		bottom: -105px;
+		width: 100px;
+		height: 92px;
+	}
+
+	#level-up-course {
+		margin-bottom: 5.625em;
+		padding-bottom: 0;
+		background-image: url(../img/learn-to-sell/bg_dotted_pink.svg);
+	}
+
+	#level-up-course .section-header {
+		margin-top: 60px;
+	}
+
+	#start-course h2 > span::before {
+		width: 311px;
+		height: 26px;
+	}
+
+	#start-course .balloon {
+		top: -45px;
+    left: 113px;
+	}
+	
+	#level-up-course .section-header::before {
+		top: -16px;
+		right: -24px;
+		width: 334px;
+		height: 77px;
+		background-image: url(../img/learn-to-sell/text_level-up_large.png);
+	}
+
+	#level-up-course h2::before {
+		top: 98px;
+		left: 41px;
+		width: 123px;
+		height: 143px;
+		background-image: url(../img/learn-to-sell/star_left_pink_large.svg);
+	}
+
+	#level-up-course h2::after {
+		top: unset;
+		right: 37px;
+		bottom: -146px;
+		width: 89px;
+		height: 106px;
+	}
+
+	#level-up-course .balloon {
+    top: -60px;
+    left: -13px;
+    width: 302px;
+    height: 165px;
+		padding-top: 48px;
+	}
+}
+
+#instructors {
+	padding-bottom: 2em;
+}
+
+#instructors ul {
+	width: 1000px;
+	margin-top: 2em;
+}
+
+#instructors li {
+	position: relative;
+	display: block;
+	max-width: 100%;
+	width: 317px;
+	margin: 0 auto;
+	padding: 1.5em;
+	background: #fff;
+	border-radius: 15px;
+}
+
+#instructors li > img {
+	display: block;
+	border: solid 1px #000;
+	border-radius: 50%;
+	margin: 0 auto;
+}
+
+#instructors li hgroup {
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+#instructors li hgroup > p {
+	color: #00748D;
+	font-size: 0.875em;
+	font-weight: 600;
+	line-height: 1;
+	letter-spacing: -0.03em;
+}
+
+#instructors li hgroup > h3 {
+	margin: 1rem 0 0;
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+#instructors li .course:not(:empty) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	column-gap: 9px;
+	margin: 1rem 0;
+	color: #fff;
+	font-family: "dnp-shuei-mgothic-std", sans-serif;
+	font-size: 0.875em;
+	line-height: 1;
+}
+
+#instructors li .course span {
+	padding: 13px 15px;
+	border-radius: 15px;
+}
+
+#instructors li .course span.start {
+	background: #34D2DC;
+}
+
+#instructors li .course span.level-up {
+	background: #FF9EC7;
+}
+
+#instructors li > p {
+	margin: 0.75em 0;
+	text-align: justify;
+	letter-spacing: -0.06em;
+}
+
+#instructors li > a.has-arrow {
+	padding: 1em;
+	background: #fff;
+	box-shadow: inset 0 0 0 2px #9A7A74;
+	color: #9A7A74;
+	text-align: center;
+	font-weight: 600;
+}
+
+#instructors li > a.has-arrow:hover {
+	background: #9A7A74;
+	color: #fff;
+}
+
+#instructors li span.recruit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 108px;
+	height: 108px;
+	background-image: url(../img/learn-to-sell/recruit.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media screen and ( max-width: 999px ) {
+	#instructors h2 {
+		margin-top: 1.5em;
+	}
+
+	#instructors li + li {
+		margin-top: 1.5em;
+	}
+}
+
+@media screen and ( min-width: 1000px ) {
+	#instructors {
+		padding-top: 3em;
+	}
+
+	#instructors ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+		justify-content: flex-start;
+    grid-gap: 1.5em;
+		margin: 2em auto;
+	}
+
+	#instructors li {
+		display: flex;
+    flex-direction: column;
+		margin: 0;
+	}
+
+	#instructors li > a.has-arrow {
+		margin-top: auto;
+	}
+}

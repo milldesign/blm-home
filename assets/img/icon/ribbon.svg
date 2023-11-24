@@ -1,0 +1,16 @@
+<svg id="icon_ribbon" width="23" height="13" viewBox="0 0 23 13" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1066_5413)">
+<g>
+<path d="M12.54 8.5L21.69 11.87L21.68 0.5L12.54 3.83" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.65 8.5L0.5 11.87V0.5L9.65 3.83" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<path d="M12.57 3.69H9.60999V8.69H12.57V3.69Z" stroke-miterlimit="10"/>
+<path d="M9.27004 6.19H5.67004" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.51 6.17999L12.92 6.18999" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath>
+<rect width="22.19" height="12.37" fill="white"/>
+</clipPath>
+</defs>
+</svg>
