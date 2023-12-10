@@ -81,6 +81,7 @@ $(document).ready(function() {
       
       if( target != undefined ) {
         let position;
+        window.history.pushState( {}, '', window.location.pathname + href );
 
         if ( $('#wpadminbar').length ) {
           position = target.offset().top - (headerHight + $('#wpadminbar').innerHeight());
