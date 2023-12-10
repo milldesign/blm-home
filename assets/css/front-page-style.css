@@ -810,7 +810,7 @@ h2[data-english="Course"]::before {
 		width: 20px;
 		height: 44px;
 		margin: auto;
-		background-image: url(../img/ribbon.svg);
+		background-image: url(../img/ribbon_brown.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
 	}
