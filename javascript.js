@@ -51,18 +51,18 @@ $(document).ready(function() {
   window.addEventListener( 'load', function() {
     const headerHight = document.getElementById( 'header-container' ).clientHeight;
 
-    if( location.hash.length ) {
+    if ( location.hash.length ) {
       $( 'body, html' ).stop().scrollTop( 0 );
       setTimeout( function() {
-        scrollToAnker( location.hash ) ;
-      }, 100);
+        scrollToAnker( location.hash );
+      }, 10 );
     }
 
     if ( typeof scrollToAnker != 'function' ) {
       function scrollToAnker( hash ) {
         let target = $( hash );
         let position;
-        if (window.matchMedia("(min-width: 1025px)").matches) {
+        if ( window.matchMedia("(min-width: 1025px)").matches ) {
           if ( $('#wpadminbar').length ) {
             position = target.offset().top - (headerHight + $('#wpadminbar').innerHeight() + 45);
           } else {
@@ -78,6 +78,7 @@ $(document).ready(function() {
     $( 'a[href*="#"]' ).on( 'click', function() {
       var href = $( this ).attr( 'href' ).substr( $( this ).attr( 'href' ).indexOf( '#' ) );
       var target = $( href == "#" || href == "" ? 'html' : href );
+      
       if( target != undefined ) {
         let position;
 

@@ -779,7 +779,7 @@
 					const commonTarget = $('button[data-tab="'+ tabId +'"]');
 					commonTarget.attr("aria-selected", true);
 					commonTarget.attr('tabindex', '-1');
-					window.history.pushState({}, '', window.location.pathname + '?panel=' + tabId);
+					window.history.pushState( {}, '', window.location.pathname + '?panel=' + tabId );
 				}
 			}
 
